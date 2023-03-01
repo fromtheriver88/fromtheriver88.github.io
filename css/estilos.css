@@ -1,0 +1,184 @@
+:root {
+	--blanco: #ffffff;
+	--oscuro: #212121;
+	--primario: #FFC107;
+	--secundario: #0097a7;
+	--gris: #757575;
+
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Krub', sans-serif;
+	font-size: 15px;
+}
+
+
+h1 {
+	text-align: center;
+	margin: 0 auto;
+	padding: 0;
+	font-size: 30px;
+	font-weight: bold;
+	color: var(--oscuro);
+}
+
+h2 {
+	font-size: 15px
+}
+
+.subtitulo {
+	text-align: center;
+	margin: 0 auto 5px auto;
+	font-size: 15px;
+	color: var(oscuro);
+}
+
+.contenedor {
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+.nav-bg {
+	background-color: var(--secundario);
+}
+
+.navegacion {
+	display: block;
+	text-align: center;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+
+
+}
+
+.navegacion a {
+	padding: 10px;
+	color: var(--blanco);
+	text-decoration: none;
+}
+
+.navegacion a:hover {
+	background-color: var(--primario);
+	color: var(--oscuro);
+}
+
+@media (min-width: 768px) {
+	.navegacion {
+		flex-direction: row;
+		justify-content: space-evenly;
+	}
+}
+
+	/**
+@media (min-width: 480px){
+	body
+}
+
+@media (min-width: 768px){
+	body
+@media (min-width: 1140px){
+
+@media (min-width: 1400px){
+*/
+	.sidebar {
+
+		padding: 10px 10px 200px 10px;
+		margin: 5px 40px 5px auto;
+		position: relative;
+		float: left;
+		width: 220px;
+		height: 100%;
+		background-color: var(--gris);
+		color: var(--blanco);
+		/*left:-270px;*/
+		transition: all 500ms lineal;
+
+	}
+
+	/* #abrir {
+	left: -270px;
+}
+
+#cerrar {
+	left: 0;
+} */
+	#boton {
+		border: none;
+		position: relative;
+		top: 10px;
+	}
+
+
+
+	#miboton {
+		display: none;
+		
+	}
+
+
+	#sidebar.active {
+		left: 0;
+
+	}
+
+	#sidebar .toggle-btn {
+		position: relative;
+		cursor: pointer;
+	}
+
+	#sidebar .toggle-btn span {
+		display: block;
+		width: 40px;
+		text-align: center;
+		font-size: 30px;
+		border: 1px solid;
+	}
+
+
+	#imagen {
+		padding: 5px;
+		margin: 5px 40px;
+		position: relative;
+		float: center;
+		border-radius: 50%;
+
+	}
+
+
+	#datos {
+		margin: 70px auto 0px auto;
+		padding: 50px auto 0px auto;
+	}
+
+	#datos-personales {
+		text-align: center;
+	}
+
+	.iconos {
+		margin: 30px auto;
+		padding: 15px auto;
+		text-align: center;
+	}
+
+	.secciones {
+		margin: 50px auto;
+		padding: 50px auto;
+
+	}
+
+	.elementos-lista {
+		margin: 10px auto;
+		padding: 10px auto;
+	}
+
+	#contenido {
+		display: grid;
+		flex-direction: colum;
+		display: block;
+		justify-content: center;
+	}
